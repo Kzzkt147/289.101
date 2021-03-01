@@ -6,10 +6,26 @@
     <meta charset="utf-8" />
     <meta name="description" content="CSS combinators challenge." />
     <style>
+        .oranges li{
+            color: violet;
+        }
         
-        /* https://developer.mozilla.org/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors#Combinators_and_selector_lists */
-        /* WRITE YOUR CSS HERE */
-
+        div > p{
+            color: red;
+        }
+        
+        p + p{
+            color: blue;
+        }
+        
+        div ~ li{
+            color: orange;
+        }
+        li em[class="a"]{
+            color: pink;
+        }
+        
+        
     </style>
 </head>
     
@@ -20,14 +36,11 @@
             <li>make the text for list items 1 and 2 violet using a descendant selector</li>
             <li>make the text for list items 1 and 2 violet using a descendant selector</li>
         </ol>
-        <p>
-            make this text red using a child selector
-        </p>
-        <p>
-            make this text blue using an adjacent selector
-        </p>
+        <p> make this text red using a child selector</p>
+        <p> make this text blue using an adjacent selector</p>
         <ul>
-            <li>make this text orange using a general sibling selector; <em>and this phrase pink by combining 2 types of selectors</em></li>
+            <div></div>
+            <li>make this text orange using a general sibling selector; <em class="a">and this phrase pink by combining 2 types of selectors</em></li>
         </ul>
     </div>
 </body>
