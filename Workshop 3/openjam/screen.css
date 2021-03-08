@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
-* { outline: 1px solid red; } 
+/* * { outline: 1px solid red; } */
 
 body{
     background-color: #82DDB5;
@@ -46,11 +46,24 @@ body{
     display: inline-block;
     font-weight: bold;
     margin-top: 25px;
-    padding: 15px, 30px; 
+    padding: 15px 30px;
 }
 
 #what{
-    background-color: rgba(200, 240, 220, 0.9)
+    background-color: rgba(200, 240, 220, 0.9);
+    margin-top: 360px;
+}
+
+#what h1{
+    text-align: center;
+    padding: 25px 0;
+    color: teal;
+    font-weight: bold;
+}
+
+h1 + p{
+
+    font-size: 1.17em;
 }
 
 #what p{
@@ -58,11 +71,128 @@ body{
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    color: teal;
+    font-weight: bold;
 }
 
-#what h1{
+#what h2{
+    text-align: center;
+    padding: 5px 0;
+    color: teal;
+    font-weight: bold;
+}
+
+
+#sponsor_logos img{
+    width: 100%;
+    max-width: 297px;
+    margin-bottom: 75px
+}
+
+
+#why{
+    background-color: rgba(180, 230, 210, 0.9);
+    margin-bottom: 40px;
+    margin-top: -22px;
+}
+
+#why h1{
     text-align: center;
     padding: 25px 0;
     color: teal;
-    
+    font-weight: bold;
 }
+
+#why p{
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: teal; 
+    padding-bottom: 50px;
+}
+
+#where{
+    background-image: url(img/map.gif);
+    background-position: center center;
+    margin-top: -39px;
+}
+
+#where h1{
+    color: darkmagenta;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#where p{
+    text-align: right;
+    padding-right: 150px;
+    padding-bottom: 450px;
+}
+
+#when{
+    background-image: url(img/wires.png);
+    background-repeat: no-repeat, repeat-x;
+    background-position: center;
+    background-size: 800px, auto;
+    background-color: rgba(70, 150, 150, 0.9);
+    margin-top: -21px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+#when h1{
+    text-align: center;
+    padding: 20px;
+}
+
+#when h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#when h3{
+    text-align: center;
+    border-top: 2px dashed white;
+    padding-top: 10px;
+}
+
+#who{
+    background-color: white;
+    margin-top: -50px;
+    padding-bottom: 50px
+}
+
+#who h1{
+    color: teal;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#who p{
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: teal; 
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+#footer{
+    background-image: url(img/texture.jpg);
+    background-position: center 280px, left top;
+    background-size: 600px, auto;
+    margin-left: 800px;
+}
+
+#footer img{
+    width: 50px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
