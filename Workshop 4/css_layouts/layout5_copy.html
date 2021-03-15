@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Layout 4</title>
+        <title>Layout 5</title>
         
         <style>
             div{
@@ -11,44 +11,52 @@
             #container{
                 margin: auto;
                 max-width: 800px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
             }
             #blue{
                 background-color: blue;
+                grid-column: 1/4;
                 height: 200px;
+                display: grid;
+                grid-template-columns: 25%;
+            }
+            #red{
+                background-color: red;
+                height: 400px;
+                grid-column: 1;
+            }
+            #red2{
+                background-color: red;
+                height: 400px;
+                grid-column: -1/ 2;
+                display: grid;
+                grid-template: 25% 75%
             }
             #green{
-                display: grid;
                 background-color: lime;
                 height: 200px;
-                grid-template-columns: 50% 50%;
-                padding: 20px;
+                grid-column: 1/4;
             }
             .yellow{
                 background-color: yellow;
                 margin: 20px;
-            }
-            #red{
-                display: grid;
-                background-color: red;
-                height: 400px;
-                grid-template-columns: 50% 50%;
-                padding: 20px;
             }
         </style>
     </head>
     
     <body>
         <div id="container">
-            <div id="blue"></div>
-            <div id="green">
+            <div id="blue">
+                <div class="yellow"></div>
+            </div>
+            <div id="red"></div>
+            <div id="red2">
                 <div class="yellow"></div>
                 <div class="yellow"></div>
             </div>
-            <div id="red">
-                <div class="yellow"></div>
-                <div class="yellow"></div>
-            </div>
-        
+            <div id="green"></div>
+
         </div>
     </body>
 </html>

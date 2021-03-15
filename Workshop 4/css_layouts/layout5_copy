@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Layout 4</title>
+        <title>Layout 2</title>
         
         <style>
             div{
@@ -11,44 +11,41 @@
             #container{
                 margin: auto;
                 max-width: 800px;
+                display: grid;
+                
             }
             #blue{
                 background-color: blue;
                 height: 200px;
-            }
-            #green{
                 display: grid;
-                background-color: lime;
-                height: 200px;
-                grid-template-columns: 50% 50%;
-                padding: 20px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            .red{
+                background-color: red;
+                height: 400px;
+                display: grid;
+                grid-template-columns: 1fr, 1fr, 1fr;
             }
             .yellow{
                 background-color: yellow;
-                margin: 20px;
+                margin: 40px;
+                grid-column: 4;
             }
-            #red{
-                display: grid;
-                background-color: red;
-                height: 400px;
-                grid-template-columns: 50% 50%;
-                padding: 20px;
+            #green{
+                background-color: lime;
+                height: 200px;
             }
         </style>
     </head>
     
     <body>
-        <div id="container">
-            <div id="blue"></div>
-            <div id="green">
-                <div class="yellow"></div>
-                <div class="yellow"></div>
-            </div>
-            <div id="red">
-                <div class="yellow"></div>
-                <div class="yellow"></div>
-            </div>
         
+        <div id="container">
+            <div id="blue">
+                <div class="yellow"></div>
+            </div>
+            <div class="red"></div>
+            <div id="green"></div>
         </div>
     </body>
 </html>
