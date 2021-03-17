@@ -13,27 +13,94 @@
                 margin: auto;
                 max-width: 800px;
             }
-            .blue{
+            .blueBanner{
                 background-color: blue;
                 height: 75px;
             }
             
-            .green{
+            #green1{
                 background-color: lime;
                 height: 450px;
             }
-            .red{
+            #red1{
                 background-color: red;
-                height: 300px;
+                height: 325px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 30% 70%;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+            #blue{
+                background-color: blue;
+                height: 550px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 16% 28% 28% 28%;
+            }
+            #green2{
+                background-color: lime;
+                height: 500px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 25% 75%;
+            }
+            #red2{
+                background-color: red;
+                height: 450px;
+                display: grid;
+                grid-template-columns: 75% 25%;
+                grid-template-rows: 20% 80%;
+            }
+            .yellowLong{
+                background-color: yellow;
+                margin: 20px;
+                grid-column: 1/5;
+            }
+            .yellowShort{
+                background-color: yellow;
+                margin: 20px;
             }
         </style>
     </head>
     
     <body>
         <div id="container">
-            <div class="blue"></div>
-            <div class="green"></div>
-            <div class="red"></div>
+            <div class="blueBanner"></div>
+            <div id="green1"></div>
+            <div id="red1">
+                <div class="yellowLong"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+            </div>
+            <div id="blue">
+                <div class="yellowLong"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+            </div>
+            <div id="green2">
+                <div class="yellowLong"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort"></div>
+            </div>
+            <div id="red2">
+                <div class="yellowLong"></div>
+                <div class="yellowShort"></div>
+                <div class="yellowShort" style="height:150px;"></div>
+            </div>
+            <div class="blueBanner"></div>
         </div>
     </body>
 </html>
