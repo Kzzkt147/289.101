@@ -10,8 +10,7 @@
     
         
         <style>
-            * { outline: white 8px solid}
-            
+            * { outline: white 8px solid; }
             
             .blue {
                 background-color: #3FB4FF;
@@ -32,6 +31,11 @@
                 background-color: lightgrey;
                 height: 200px;
             }
+            
+            .darkred {
+                background-color: darkred;
+                height: 250px;
+            }
             /* xs devices */
             body { background-color: red }
             
@@ -43,6 +47,7 @@
             @media (min-width: 768px) {
                 body { background-color: yellow }
                 .green { height: 150px }
+                .darkred { height: auto }
             }
             /* lg devices */
             @media (min-width: 992px) {
@@ -70,8 +75,28 @@
             </div>
             
             <div class="row">
-                <div class=" col-12 orange"></div>
+                <div class="col-md-6 orange">
+                    <div class="row">
+                        <div class="col-6 grey"></div>
+                        <div class="col-6 grey"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 grey"></div>
+                        <div class="col-6 grey"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 grey"></div>
+                        <div class="col-6 grey"></div>
+                    </div>
+                    
+                </div>
                 
+                <div class="col-md-6 darkred"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 darkred"></div>
+            
             </div>
         
         </div>
