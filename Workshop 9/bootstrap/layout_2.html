@@ -8,10 +8,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
     
+        
+        <style>
+            * { outline: white 8px solid}
+            
+            
+            .blue {
+                background-color: #3FB4FF;
+                height: 75px;
+            }
+            
+            .green {
+                background-color: greenyellow;
+                height: 75px;
+            }
+            
+            .orange {
+                background-color: orange;
+                height: 600px;
+            }
+            
+            .grey {
+                background-color: lightgrey;
+                height: 200px;
+            }
+            /* xs devices */
+            body { background-color: red }
+            
+            /* sm devices */
+            @media (min-width: 576px) {
+                body { background-color: orange }
+            }
+            /* md devices */
+            @media (min-width: 768px) {
+                body { background-color: yellow }
+                .green { height: 150px }
+            }
+            /* lg devices */
+            @media (min-width: 992px) {
+                body { background-color: green }
+                .blue { height: 50px}
+            }
+            /* xl devices */
+            @media (min-width: 1200px) {
+                body { background-color: blue }
+                .blue { height: 50px}
+        </style>
+        
     </head>
     
     <body>
     
+        <div class="container">
+        
+            <div class="row">
+                <div class="col-12 blue"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 green"></div>
+            </div>
+            
+            <div class="row">
+                <div class=" col-12 orange"></div>
+                
+            </div>
+        
+        </div>
     
     
     </body>
