@@ -36,6 +36,11 @@
                 background-color: darkred;
                 height: 250px;
             }
+            
+            .pink {
+                background-color: hotpink;
+                height 200px;
+            }
             /* xs devices */
             body { background-color: red }
             
@@ -53,6 +58,8 @@
             @media (min-width: 992px) {
                 body { background-color: green }
                 .blue { height: 50px}
+                .green { height : 1200px }
+                .orange { height: auto }
             }
             /* xl devices */
             @media (min-width: 1200px) {
@@ -71,11 +78,11 @@
             </div>
             
             <div class="row">
-                <div class="col-12 green"></div>
+                <div class="col-12 d-lg-none green"></div>
             </div>
             
             <div class="row">
-                <div class="col-md-6 orange">
+                <div class="col-md-6 d-lg-none  orange">
                     <div class="row">
                         <div class="col-6 grey"></div>
                         <div class="col-6 grey"></div>
@@ -91,14 +98,48 @@
                     
                 </div>
                 
-                <div class="col-md-6 darkred"></div>
+                <div class="col-md-6 d-lg-none  darkred"></div>
             </div>
             
             <div class="row">
-                <div class="col-12 darkred"></div>
+                <div class="col-12 d-lg-none  darkred"></div>
             
             </div>
         
+            
+            
+            <div class="row">
+                <div class="col-3 d-none d-lg-block green"></div>
+                
+                <div class="col-6 d-none d-lg-block orange">
+                    <div class="row">
+                        <div class="col-4 d-none d-lg-block grey"></div>
+                        <div class="col-8 d-none d-lg-block pink"></div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-4 d-none d-lg-block grey"></div>
+                        <div class="col-8 d-none d-lg-block pink"></div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-4 d-none d-lg-block grey"></div>
+                        <div class="col-8 d-none d-lg-block pink"></div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-4 d-none d-lg-block grey"></div>
+                        <div class="col-8 d-none d-lg-block pink"></div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-4 d-none d-lg-block grey"></div>
+                        <div class="col-8 d-none d-lg-block pink"></div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-4 d-none d-lg-block grey"></div>
+                        <div class="col-8 d-none d-lg-block pink"></div>    
+                    </div>
+                </div>
+                
+                <div class="col-3 d-none d-lg-block darkred"></div>
+            </div>
         </div>
     
     
